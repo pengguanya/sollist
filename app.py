@@ -22,6 +22,15 @@ def get_table_download_link(df, filename='data.xlsx', text='Download Excel file'
 
 def main():
     st.title('Compare SOLL and IST')
+
+    st.markdown("""
+    Please upload an Excel file with two worksheets. 
+    
+    One worksheet should be named **'SOLL'**, and the other should be named **'IST'**. 
+    
+    Both of these worksheets need to have the mandatory columns 'Name', 'Material', and 'Amount'.
+    """)
+
     uploaded_file = st.file_uploader("Upload the excel file", type=['xlsx'])
 
     with open('config.yml') as file:
