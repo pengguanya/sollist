@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sollist"
+version = "0.1.0"
+description = "Compare SOLL and IST and provide user readable output."
+authors = ["Guanya Peng <guanya.peng24@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.*"
+pandas = "^2.2.0"
+streamlit = "^1.30.0"
+openpyxl = "^3.1.2"
+pyyaml = "^6.0.1"
+numpy = "^1.26.3"
+xlsxwriter = "^3.1.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

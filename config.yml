@@ -1,0 +1,17 @@
+ist_sheet: 'aus SAP'
+
+soll_sheet: 'LHV-Liste (nur J und D)'
+
+ist_col_map: 
+  Menge in ErfassME: Amount
+  ErfassungsMngEinh: Unit
+  Kunde: Kunden-Nr
+
+soll_col_map: 
+  Vereinbarte Bestellmengen/Jahr: Amount
+  Einheit: Unit
+  Kunde: Name
+  Mat.Nr.: Material
+
+ist_cols: ['Name', 'Kunden-Nr', 'Material', 'Amount', 'Unit']
+soll_cols: ['Name', 'Kunden-Nr', 'Kunden-Nr2', 'Kunden-Nr3', 'Material', 'Amount', 'Unit']
